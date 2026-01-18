@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <title>北投生態行</title>
+  
+  <!-- PWA 設定 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="北投行">
+  
+  <!-- 圖示 (這裡換成一個綠色的葉子圖示，區分之前的 App) -->
+  <link rel="apple-touch-icon" href="https://img.icons8.com/color/192/leaf.png">
+  <link rel="icon" type="image/png" href="https://img.icons8.com/color/192/leaf.png">
+  
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js');
+    }
+  </script>
+  
+  <style>
+    body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; background: #2E8B57; }
+    iframe { width: 100%; height: 100%; border: none; }
+  </style>
+</head>
+<body>
+  <!-- ⚠️ 請將下方網址換成你的「北投 App」網址 (結尾是 /exec) -->
+  <iframe src="https://script.google.com/macros/s/AKfycbwB3vduLiXdu0IyiMstj4zNGjBGXzbJl5HAXhPKEI1SR-xE8ezHXofM-9-8szoKXF3_vA/exec"></iframe>
+</body>
+</html>
